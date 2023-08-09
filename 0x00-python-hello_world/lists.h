@@ -5,7 +5,7 @@
 
 /**
  * struct listint_s - is a singly linked list
- * @m: is an integer
+ * @n: is an integer
  * @next: is a points to the next node
  *
  * Description: is a singly linked list node structure
@@ -13,12 +13,12 @@
  */
 typedef struct listint_s
 {
-	int m;
+	int n;
 	struct listint_s *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
-listint_t *add_nodeint(listint_t **head, const int m);
+listint_t *add_nodeint(listint_t **head, const int n);
 void free_listint(listint_t *head);
 int check_cycle(listint_t *list);
 
